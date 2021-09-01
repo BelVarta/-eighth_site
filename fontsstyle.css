@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?n53ill');
+  src:  url('fonts/icomoon.eot?n53ill#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?n53ill') format('truetype'),
+    url('fonts/icomoon.woff?n53ill') format('woff'),
+    url('fonts/icomoon.svg?n53ill#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right:before {
+  content: "\e908";
+}
+.slick-arrow.slick-prev .icon-right:before{
+  content: "\e908";
+}
+.icon-left:before {
+  content: "\e909";
+}
+.icon-next-arrowpng:before {
+  content: "\e90a";
+  color: #a3a2a0;
+  font-size: 70px;
+}
+.icon-next-arrowpng:hover::before{
+  color: #d3c1ad;
+  transition: .3s;
+}
+
+.icon-prew-arrow:before {
+  content: "\e90b";
+  color: #a3a2a0;
+  font-size: 70px;
+}
+.icon-prew-arrow:hover:before{
+  color: #d3c1ad;
+  transition: .3s;
+}
+
+.icon-lupa:before {
+  content: "\e906";
+  color: #ffff;
+  font-size: 20px;
+  
+}
+.icon-link{
+  text-decoration: none;
+}
+.icon-lupa{
+  text-decoration: none;
+}
+.icon-link:before {
+  content: "\e907";
+  color: #ffff;
+  font-size: 20px;
+  padding-right: 20px;
+ 
+}
+.icon-link:hover:before{
+  color: #c7b299;
+  transition: .3s;
+}
+.icon-lupa:hover::before{
+  color: #c7b299;
+  transition: .3s;
+}
+
+
+.icon-develop:before {
+  content: "\e900";
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7b299,#c7b299 50%, #555555 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.icon-bag:before {
+  content: "\e901";
+
+}
+.icon-papka:before {
+  content: "\e902";
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7b299,#c7b299 50%, #555555 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition:275ms ease;
+}
+.icon-search:before {
+  content: "\e903";
+}
+.icon-xz:before {
+  content: "\e904";
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7b299,#c7b299 50%, #555555 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition:275ms ease;
+}
+.icon-pensil:before {
+  content: "\e905";
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  overflow: hidden;
+  background: linear-gradient(to right, #c7b299,#c7b299 50%, #555555 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition:275ms ease;
+  
+}
+
+
+
+.text_container div:hover .icon-pensil:before{
+  transition: .3s;
+  background-position: 0 100%;
+}
+
+.text_container div:hover .icon-develop:before{
+  transition: .3s;
+  background-position: 0 100%;
+}
+.text_container div:hover .icon-xz:before{
+  transition: .3s;
+  background-position: 0 100%;
+}
+
+.text_container div:hover .icon-papka:before{
+  transition: .3s;
+  background-position: 0 100%;
+}
+
+
+@media screen and (max-width: 1160px) {
+  .icon-prew-arrow:before {
+    content: "\e90b";
+    color: #a3a2a0;
+    font-size: 50px;
+  }
+  .icon-next-arrowpng::before{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .icon-prew-arrow:before {
+    content: "\e90b";
+    color: #a3a2a0;
+    font-size: 30px;
+  }
+  .icon-next-arrowpng::before{
+    font-size: 30px;
+  }
+}

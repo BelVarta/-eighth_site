@@ -1,0 +1,1830 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+@font-face {
+    font-family: "Conv_MyriadPro-Regular";
+    src: url("fonts/MyriadPro-Regular.eot");
+    src: local("☺"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"), url("fonts/MyriadPro-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+header{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    z-index: 50;
+ 
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    z-index: 30;
+}
+
+
+.header__logo::before{
+    content:url(img/logo.svg);
+    padding-right: 13px;
+}
+
+.icon_box{
+    display: flex;
+}
+.header_body{
+position: relative;
+display: flex;
+justify-content: space-between;
+height: 80px;
+align-items: center;
+
+}
+.header_list{
+display:flex;
+position: relative;
+z-index: 2;
+align-items: center;
+
+}
+.header_list li{
+list-style: none;
+margin: 0px 0px 0px 38px;
+
+}
+.header_menu a{
+text-decoration: none;
+color: #ffffff;
+
+font-size: 18px;
+}
+.header_menu a:hover{
+    text-decoration: none;
+    color: #c7b299;
+ 
+    font-size: 18px;
+    transition: .3s;
+    }
+.wrapper{
+max-width: 1173px;
+margin: 0px auto;
+padding: 0px 10px;
+
+}
+
+.header_burger{
+display: none;
+}
+
+
+
+
+#block-for-slider {
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: calc(50% - 25px);
+    z-index: 10;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 140px;
+}
+
+#next-btn {
+    right: 140px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+
+}
+.header_container{
+     max-height: 725px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_text{
+    width:570px;
+    position: absolute;
+    top: calc(50% - 90px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+
+}
+.header_text h1,p{
+    font-family: "Conv_MyriadPro-Regular";
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+}
+.header_text h1:first-of-type{
+    font-size: 36px;
+    font-family: "Conv_MyriadPro-Regular";
+}
+.header_text h1:last-of-type{
+    font-size: 52px;
+    font-family: "Conv_MyriadPro-Regular";
+}
+.header_text button{
+  
+    color: #ffffff;
+    padding:22px 45px ;
+    text-transform: uppercase;
+    font-family: "Conv_MyriadPro-Regular";
+    background-color: #998675;
+    border-radius:10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    display: block;
+    cursor: pointer;
+    
+    
+}
+
+.text_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text_container div{
+    width: 255px;
+    margin-right: 35px;
+}
+.text_container div:last-of-type{
+    margin-right: 0px;
+}
+.text_container div h2,p{
+    text-align:center;
+
+}
+.text_container div h2{
+    text-align:  center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 25px;
+    position: relative;
+    font-weight: 800;
+    overflow: hidden;
+    background: linear-gradient(to right, #c7b299,#c7b299 50%, #555555 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition:275ms ease;
+}
+.text_container div:hover h2{
+    transition: .3s;
+    background-position: 0 100%;
+}
+.text_container div p{
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.text_container span{
+    display: block;
+    height: 50px;
+    text-align: center;
+    margin-bottom:30px;
+    margin-top: 80px;
+}
+span.icon-line{
+    height: 3px;
+    width: 70px;
+    background-color: #000;
+    display:block;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+    background: linear-gradient(to right, #c7b299,#c7b299 50%, #555555 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: 275ms ease;
+}
+.text_container div:hover span.icon-line{
+  background-position: 0 100%;
+
+}
+
+.backgraund h2,p{
+    text-align: center;
+    font-family: "Conv_MyriadPro-Regular";
+}
+.backgraund h2{
+    color: #666666;
+    margin-bottom:30px ;
+    font-weight: 400;
+}
+
+.backgraund p{
+    color: #999999;
+    max-width: 770px;
+    margin:  0 auto;
+}
+.backgraund{
+    margin-top: 160px;
+    height: 620px;
+    background: url(img/backgraund.png) no-repeat;
+    background-position: bottom;
+  
+}
+.second_bg{
+ 
+    height: 150px;
+    width: 100%;
+    background: url(img/second_bg.png) no-repeat;
+
+}
+.second_bg h2{
+    color: #ffffff;
+    font-family: "Conv_MyriadPro-Regular";
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.second_bg span{
+    color: #cc9999;
+    font-family: "Conv_MyriadPro-Regular";
+    font-weight: 400;
+}
+
+.second_bg p{
+    color: #666666;
+    text-align: left;
+}
+.second_bg_text{
+width: 100%;
+display: flex;
+align-items: center;
+height: 150px;
+justify-content: space-between;
+}
+.second_bg button{
+    font-family: "Conv_MyriadPro-Regular";
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color:#998675;
+    padding:20px 37px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.gallery_text h2{
+    font-size: 30px;
+    font-family: "Conv_MyriadPro-Regular";
+    font-weight: 400;
+    color: #666666;
+    margin-top: 80px;
+    margin-bottom: 35px;
+    
+}
+.gallery_text p{
+    font-family: "Conv_MyriadPro-Regular";  
+    color: #999999;
+    margin-bottom: 35p;
+}
+.gallery_text h2,p{
+    text-align: center;
+
+}
+.gallery_menu{
+    width:600px;
+    display: flex;
+    justify-content: space-between;
+    margin:  0 auto;
+    margin-top: 45px;
+    
+}
+.gallery_menu a{
+    text-decoration: none;
+    color:#999999 ;
+    font-family: "Conv_MyriadPro-Regular";
+   
+}.gallery_menu a{
+    padding: 10px 20px;
+ 
+}
+.gallery_menu a:hover{
+    background:#998675;
+    transition: .3s;
+}
+.gallery_menu a:first-child{
+    padding: 10px 20px;
+
+}
+.gallery_menu a:hover:first-child{
+    padding: 10px 20px;
+    background:#998675 ;
+}
+
+.gallery_menu a:hover{
+    color: #ffffff;
+}
+
+
+.content_box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.box:nth-child(2){
+    margin: 0 0px;
+}
+.bg_box{
+    position: absolute;
+    height: 0px;
+    width:100%;
+    top: 0;
+    background:rgba(48, 54, 62, 0.6) ;
+    background-position: 0 -22px;
+    z-index: 1;
+    overflow: hidden;
+     
+}
+
+.img{
+    height: 236px;
+    width:369px;
+    background:url(img/hend-phone.png)  no-repeat;
+    background-position: 0px -24px;
+    position: relative;
+}
+ .img_second{
+    height: 236px;
+    width:369px;
+    background:url(img/quam.jpg)  no-repeat;
+    position: relative;
+}
+.img_thirth{
+    height: 236px;
+    width:369px;
+    background:url(img/photo-book.jpg)  no-repeat;
+    position: relative;
+    
+}
+.img_forth{
+    margin-top: 30px;
+    height: 236px;
+    width:369px;
+    background:url(img/photo-birds.jpg)  no-repeat;
+    position: relative;
+    background-position: 0px -85px;
+}
+.img_fifth{
+    margin-top: 30px;
+    height: 236px;
+    width:369px;
+    background:url(img/photo-magazine.png)  no-repeat;
+    position: relative;
+    background-position: 0px -19px;
+}
+.img_sixth{
+    margin-top: 30px;
+    height: 236px;
+    width:369px;
+    background:url(img/photo-ocean.jpg)  no-repeat;
+    position: relative;
+}
+.text_box{
+    height: 100px;
+    width:369px;
+    position: relative;
+}
+.link{
+height: 237px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ opacity: 0;
+ width: 100%;
+ 
+}
+
+div.link a:first-of-type{
+    padding-right: 15px;
+}
+.box:hover .link{
+    opacity: 1;
+    transition: 1s;
+}
+
+.box:hover .text_box{
+    background:#362f2d;
+    transition: .4s;
+}
+.text_box::after{
+    top: -10px;
+    left:10px;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-left:13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}
+.box:hover .text_box:after{   
+    border-bottom: 10px solid #362f2d;
+    transition: .4s
+}
+.text_box h3{
+    font-family: "Conv_MyriadPro-Regular";
+   font-weight: 400px;
+    color: #cc9999;
+    margin-left: 20px;
+    padding-top: 30px;
+   margin-bottom: 15px;
+}
+.box:hover .text_box h3{
+    color: #ffffff;
+}
+.text_box p{
+    color: #cccccc;
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+.box:hover .text_box p{
+     color: #c7b299;
+    }
+
+    .content_button{
+    font-family: "Conv_MyriadPro-Regular";
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #998675;
+    padding: 20px 45px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:0 auto;
+
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-bottom: 80px;
+    display: block;
+  
+    }
+
+    .description_content{
+        display: flex;
+
+    }
+
+    .description_telephon{
+        height: 700px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        background: url(img/iphon-and-hend.jpg) no-repeat;
+        background-position: 10px 84px;
+
+    }
+    .description_telephon_text h1{
+        font-family: "Conv_MyriadPro-Regular";
+        font-weight: 400;
+        margin-top: 200px;
+    }
+    .description_telephon_text p{
+        color: #999999;
+        text-align: left;
+    }
+    .description_telephon_text p:first-of-type{
+        text-align: left;
+        margin:40px 0;
+    }
+    .description_telephon_text p:nth-child(3){
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    .description_telephon_text p:nth-child(3)::before{
+        content: url(img/right-arrow.png);
+        vertical-align: middle;
+        padding-right: 30px;
+    }
+    .description_telephon_text p:nth-child(4){
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    .description_telephon_text p:nth-child(4)::before{
+        content: url(img/right-arrow.png);
+        vertical-align: middle;
+        padding-right: 30px;
+        margin-bottom: 10px;
+       
+    }
+
+    .description_telephon_text p:nth-child(5){
+        margin-left: 30px;
+        margin-bottom: 10px;
+
+    }
+    .description_telephon_text p:nth-child(5)::before{
+        content: url(img/right-arrow.png);
+        vertical-align: middle; 
+        padding-right: 30px;
+        
+    }
+    .description_telephon_text p:nth-child(6){
+        margin-left: 30px;
+    }
+    .description_telephon_text p:nth-child(6)::before{
+        content: url(img/right-arrow.png);
+        vertical-align: middle;
+        padding-right: 30px;
+        
+    }
+    .description_telephon_text{
+        width: 662px;
+        display: flex;
+        flex-direction: column;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         min-height: 300px;
+         flex-wrap: wrap;
+        width: 100%;
+        background: url(img/stats_bg.png);
+    }
+    .stats_bg{
+        background: url(img/stats_bg.png);
+    }
+    .stats img{ 
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .stats_block{
+        width: 135px;
+    }
+    .stats_block p:first-of-type{
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 48px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .stats_block p:last-of-type{
+        font-family: "Conv_MyriadPro-Regular";
+        color: #c7b299;
+        text-transform: uppercase;
+    }
+    .line{
+        height: 2px;
+        width: 30px;
+        background-color: #ffffff;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+    .slick-list {
+        overflow: hidden;
+    }
+    /* Лента слайдов */
+    .slider{
+        height: 400px;
+        position: relative;
+       
+    }
+    .slick-track{
+    
+        display: flex;
+    }
+    
+ 
+ .slick-arrow{
+        position: absolute;
+        top:100%;
+        z-index: 10;
+        overflow: visible;
+        font-size: 20px;
+        border: none;
+        font-size: 0;
+        margin-top: 30px;
+ }
+   
+   .slick-arrow.slick-prev{
+       left: 51%;
+    background: url(img/left.svg) no-repeat;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    top: 99%;
+    transform: rotate(180deg);
+    }
+    .slick-arrow.slick-prev:hover{
+        height: 22px;
+    width: 22px;
+     background: url(img/right.svg) no-repeat;
+     transform: rotate(0deg);
+     transition: .3s;
+    }
+     
+  .slick-arrow.slick-next{
+    background: url(img/left.svg) no-repeat;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    right: 51%;
+    top:99%;
+    
+    }
+    .slick-arrow.slick-next:hover{
+        height: 22px;
+        width: 22px;
+        background: url(img/right.svg) no-repeat;
+        transform: rotate(180deg);
+        transition: .3s;
+    }
+    .post{
+        width: 100%;
+    }
+    .post h1,p{
+        text-align: center;
+        font-family: "Conv_MyriadPro-Regular";
+        font-weight: 400;
+
+    }
+    .post h1{
+        color: #666666;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .post p{
+        margin: 0 auto;
+        color: #8c8c8c;
+       max-width: 770px;
+        margin-bottom: 40px;
+    }
+
+    
+    .img_gallery_second {
+        height: 220px;
+        width: 370px;
+        background: url(img/macbook.png) no-repeat;
+        background-position: -4px -10px;
+        position: relative;
+    }
+    .img_gallery_thirth{
+        height: 220px; 
+        width: 370px;
+        background: url(img/ship.png) no-repeat;
+        background-position: -321px -350px;
+        position: relative;
+    }
+    
+    .img_gallery_forth{
+        height: 220px; 
+        width: 370px;
+        background: url(img/hend-phone.png) no-repeat;
+        background-position: 0px -29px;
+        position: relative;
+    }
+    .img_gallery{
+     height: 220px; 
+    width: 370px;
+    background: url(img/foots.png) no-repeat;
+    background-position: -130px -182px;
+    position: relative;
+    }
+    .data{
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        height: 60px;
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .data span:first-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 25px;
+        font-family: "Conv_MyriadPro-Regular";
+        height: 35px;
+        width: 50px;
+        background-color: #363636;
+        display: block;
+        margin:0 auto;
+        border-top:  1px solid #0000;
+        border-top-right-radius: 3px ;
+        border-top-left-radius: 3px ;
+    }
+    .data span:first-of-type p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 100%;
+    }
+        .data span:last-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 25px;
+        background-color:#252525 ;
+        color: #ffffff;
+        font-size: 15px;
+        font-family: "Conv_MyriadPro-Regular";
+        border-bottom:  1px solid #0000;
+        border-bottom-right-radius: 3px ;
+        border-bottom-left-radius: 3px ;
+    }
+    .container_box:hover .data span:first-of-type {
+        background-color: #c7b299;
+        z-index: 10;
+        transition: .4s;
+    }
+    .container_box:hover .data span:last-of-type {
+        background-color: #a48d72;
+        transition: .4s;
+        z-index: 10;
+    }
+    .text_gallery {
+        height: 175px;
+        width: 370px;
+        position: relative;
+    }
+    .text_gallery h3{
+    font-family: "Conv_MyriadPro-Regular";
+    color: #666666;
+    padding-top: 30px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    font-weight: 400;
+    }
+    .text_gallery p{
+        font-size: 14px;
+        color:#999999;
+        text-align: left;
+        padding-bottom: 25px;
+        padding-left: 30px;
+    }
+    .text_gallery a{
+        font-size: 14px;
+        color: #c7b299;
+        text-decoration: none;
+        padding-left: 30px;
+    }
+    .text_gallery a::after{
+        content: url(img/golden_aroow.svg);
+        padding-left: 10px;
+    }
+    .container_box:hover .text_gallery{
+        background: #333333;
+        transition: .4s;
+    }
+    .container_box:hover h3{
+        color: #c7b299;
+    }
+    .container_box:hover p{
+        color: #ffffff;
+    }
+    .bg_container{
+    position: absolute;
+    height: 0px;
+    width:100%;
+    top: 0;
+    background:rgba(48, 54, 62, 0.6) ;
+    background-position: 0 -22px;
+    z-index: 1;
+    overflow: hidden  
+    }
+    
+
+
+    .logo_items_bg{
+       min-height: 490px;
+        width: 100%;
+        background: url(img/bg-photo.png) no-repeat;
+        background-size: cover;
+        margin-top: 80px;
+    }
+    .logo_items{
+        min-height: 490px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .logo_items span:first-child {
+        background: url(img/logo-barber.png) no-repeat;
+        height: 150px;
+        width: 210px;
+      
+    }
+    .logo_items span:nth-child(2){
+        height: 210px;
+        width: 210px;
+        background: url(img/logo-discus.png)no-repeat;
+        padding-left: 20px;
+    }
+
+    .logo_items span:nth-child(3){
+        height: 135px;
+        width: 210px;
+        background: url(img/logo-disigners.png)no-repeat;
+        padding-left: 20px;
+    }
+    .logo_items span:nth-child(4){
+        height: 165px;
+        width: 210px;
+        background: url(img/logo-cofferoyal.png)no-repeat;
+        padding-left: 20px;
+    }
+
+
+
+    .text_content_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .text_content{
+
+        min-height: 505px;
+        width: 100%;
+        background:#191919;
+    }
+    .text_content_logo{
+        width: 265px;
+    }
+    .text_content_logo p{
+        text-align: left;
+        color: #555555;
+        margin-bottom: 60px;
+        font-size: 14px;
+        font-family: "Conv_MyriadPro-Regular";
+    }
+    .text_content_logo  a:last-of-type{
+        color:#adadad ;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .logo_сontent{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 35px;
+    margin-top: 80px;
+    }
+    .logo_сontent::before {
+        content: url(img/logo.svg);
+        padding-right: 13px;
+    }
+    .text_content_logo  a:last-of-type:after{
+        padding-left: 22px;
+        content: url(img/small_arrow.png);
+        
+    }
+
+    .text_content_post{
+        width: 250px;
+    }
+    .text_content_post h2{
+        font-family: "Conv_MyriadPro-Regular";
+        color: #ffffff;
+        text-align: left;
+        margin-bottom: 35px;
+        margin-top: 100px;
+        font-weight: 400;
+    }
+    .text_content_post p{
+        text-align: left;
+        font-size: 14px;
+        font-family: "Conv_MyriadPro-Regular";
+    }
+    .text_content_post p:first-of-type{
+        color: #363636;
+    }
+    .text_content_post p:nth-of-type(2){
+        color: #555555;
+        margin-top: 10px;
+        padding-bottom: 20px;
+       border-bottom: 1px solid #252525;
+    }
+    .text_content_post p:nth-of-type(3){
+        color: #ffffff;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .text_content_post p:nth-of-type(4){
+        color: #c7b299;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #252525;
+    }
+    .text_content_post p:nth-of-type(5){
+        color: #363636;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .text_content_post p:last-of-type{
+        color: #555555;
+    }
+
+    .text_content_twitter {
+        width: 265px;
+    }
+    .text_content_twitter h2{
+        color: #ffffff;
+        font-family: "Conv_MyriadPro-Regular";
+        font-weight: 400;
+        margin-bottom: 35px;
+        margin-top: 100px;
+        
+    }
+    .text_content_twitter p{
+        text-align: left;
+        font-size: 14px;
+        font-family: "Conv_MyriadPro-Regular";
+        color: #555555;
+    }
+    .text_content_twitter p:first-of-type span{
+        color: #00bff3;
+    }
+    .text_content_twitter p:nth-of-type(2){
+        margin-top: 10px;
+        color: #363636;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #252525;
+        margin-bottom: 20px;
+    } 
+    .text_content_twitter p:nth-of-type(3) span{
+        color: #00bff3;
+    }
+
+    .text_content_twitter p:nth-of-type(4){
+        margin-top: 10px;
+        color: #363636;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #252525;
+        margin-bottom: 20px;
+    }
+    .text_content_twitter p:nth-of-type(5) span{
+        color: #959595;
+    }
+    .text_content_twitter p:nth-of-type(6){
+        color: #363636;
+        margin-top: 10px;
+    }
+
+    .text_content_widget_img{
+        display: flex;
+        width: 270px;
+        height: 206px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .text_content_widget_img span:first-of-type{
+        display: block;
+        width: 130px;
+        height: 98px;
+        background: url(img/photo-phone.png) no-repeat;
+        background-position: -12px 0px;
+    }
+    .text_content_widget_img span:nth-of-type(2){
+        display: block;
+        width: 130px;
+        height: 98px;
+        background: url(img/photo-bag.png) no-repeat;
+        background-position: -19px -86px;
+    }
+    .text_content_widget_img span:nth-of-type(3){
+        display: block;
+        width: 130px;
+        height: 98px;
+        background: url(img/photo-journal.png) no-repeat;
+        background-position: -12px -4px;
+        margin-top: 11px;
+
+    }
+    
+    .text_content_widget h2{
+        color: #ffffff;
+        font-family: "Conv_MyriadPro-Regular";
+        font-weight: 400;
+        margin-bottom: 35px;
+        margin-top: 100px;
+    } 
+
+    .text_content_widget_img span:nth-of-type(4){
+        display: block;
+        width: 130px;
+        height: 98px;
+        background: url(img/photo-icon.png) no-repeat;
+        background-position: -6px 0px;
+        margin-top: 11px;
+
+    }
+    footer{
+        min-height: 112px;
+        width: 100%;
+        background: #111111;
+    }
+    .footer_text{
+        min-height: 112px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        
+    }
+    .footer_text p{
+        padding-right: 10px;
+    }
+    .footer_text a{
+        color: #555555;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 1px solid #252525;
+        font-size: 14px;
+    }
+    .footer_text a:hover{
+        transition: .3s;
+        color: #c7b299;
+    }
+    .second_footer_text{
+        min-height: 112px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    .second_footer_text p{
+        font-size: 14px;
+        color: #555555;
+    }
+    .second_footer_text p:first-of-type{
+        padding-right: 10px;
+        border-right: 1px solid #252525;
+
+    }
+    .second_footer_text p:last-of-type{
+        padding-left:10px ;
+    }
+    .second_footer_text p span{
+        color:#959595;
+    }
+    .footer_text_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+    @media screen and (max-width: 1210px) {
+        .content_box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+       
+    }
+    @media screen and (max-width: 1160px) {
+        .text_container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+       
+    }
+    @media screen and (max-width: 1150px) {
+        .description_content{
+            flex-direction: column;
+        }
+        .description_telephon {
+           max-height: 620px;
+           max-width:50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+       
+        .description_telephon_text h1 {
+            font-family: "Conv_MyriadPro-Regular";
+            font-weight: 400;
+             margin-top: 0px; 
+        }
+        .description_telephon_text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+     }
+    @media screen and (max-width: 1140px) {
+        .header_text h1:first-of-type {
+            font-size: 30px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        .header_text h1:last-of-type {
+            font-size: 45px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        .header_text {
+            width: 490px;
+            position: absolute;
+            top: calc(50% - 90px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .img_thirth {
+           margin-top: 30px;
+        }
+        .backgraund {
+            margin-top: 160px;
+            height: 517px;
+            background: url(img/backgraund.png) no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+        .text_content_widget{
+            margin-bottom: 20px;
+        }
+        .header_body{
+            height: 50px;
+        }
+        .header_burger{
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+           z-index: 3;
+        }
+    
+         .header_burger span{
+            position: absolute;
+            background-color: #ffffff;
+            width: 100%;
+            height: 2px;
+            top: 44%;
+            transition: .3s;
+         }
+         .header_list li {
+            list-style: none;
+            margin: 0px 0px 0px 18px;
+        }
+        .header_burger::before,
+        .header_burger::after{
+            content: "";
+            background-color: #ffffff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: .3s;
+        }
+        .header_burger::before{
+            top: 0;
+        }
+        .header_burger::after{
+            bottom: 0;
+        }
+        .header_burger.active::before{
+            transform: rotate(45deg);
+            top:9px;
+        }
+        .header_burger.active::after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+        .header_burger.active span{
+         display: none;
+         }
+    
+        .header_menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color:#555555;
+            padding-top:  70px;
+            top: -120%;
+        }
+        .header_menu.active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color:  #555555;
+            padding-top:  70px;
+            top: 0%;
+            transition: .3s;
+        }
+        .header_list{
+            display:block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .header_list li{
+           margin-bottom: 20px;
+        }
+        body.lock{
+            overflow: hidden;
+        }
+        .slider {
+            height: 400px;
+            position: relative;
+            max-width: 858px;
+            margin: 0 auto;
+        }
+        
+    }
+    
+    
+    @media screen and (max-width: 940px) {
+        .logo_items {
+            min-height: 490px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .logo_items span {
+            padding: 15px;
+        }
+        #prev-btn {
+            left: 70px;
+        }
+        #next-btn {
+            right: 70px;
+        }
+    }
+    @media screen and (max-width: 775px) {
+        .img_second {
+            margin-top: 30px;
+        }
+        .description_telephon {
+            max-height: 514px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+        .backgraund {
+            margin-top: 80px;
+            height: 399px;
+            background: url(img/backgraund.png) no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+        .header_text button {
+            color: #ffffff;
+            padding: 12px 30px;
+            text-transform: uppercase;
+            font-family: "Conv_MyriadPro-Regular";
+            background-color: #998675;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            display: block;
+            cursor: pointer;
+        }
+        .slide-img {
+            width: 100%;
+            height: 430px;
+        }
+        .header_text h1:last-of-type {
+            font-size: 37px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        .header_text h1:first-of-type {
+            font-size: 24px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        #next-btn {
+            right: 30px;
+        }
+        #prev-btn {
+            left: 30px;
+        }
+        .header_text {
+            width: 360px;
+            position: absolute;
+            top: calc(50% - 90px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+    }@media screen and (max-width: 769px) {
+        .slider {
+            height: 400px;
+            position: relative;
+            max-width: 370px;
+            margin: 0 auto;
+        }
+    }
+    
+    @media screen and (max-width: 720px) {
+        .stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 20px 0;
+        }
+        .stats_block {
+            margin: 15px;
+            width: 135px;
+        }
+        .text_content_twitter {
+            width: 265px;
+            margin-bottom: 20px;
+        }
+        
+    }
+    @media screen and (max-width: 616px) {
+        .text_container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .second_bg button {
+            font-family: "Conv_MyriadPro-Regular";
+            font-size: 14px;
+            text-transform: uppercase;
+            background-color: #998675;
+            padding: 10px 15px;
+            color: #ffffff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .gallery_menu {
+            width: 534px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+        .description_telephon {
+            max-height: 394px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+    }
+    @media screen and (max-width: 565px) {
+        .header_text {
+            width: 360px;
+            position: absolute;
+            top: calc(50% - 50px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .slide-img {
+            width: 100%;
+            height: 290px;
+        }
+        .header_text h1:last-of-type {
+            font-size: 26px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        #prev-btn {
+            left: 0px;
+        }
+        #next-btn {
+            right:0px;
+        }
+        .header_text h1:first-of-type {
+            display: none;
+            font-size: 24px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        .header_text p{
+            display: none;
+        }
+        .second_bg button {
+            font-family: "Conv_MyriadPro-Regular";
+            font-size: 14px;
+            text-transform: uppercase;
+            background-color: #998675;
+            padding: 10px 5px;
+            color: #ffffff;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .second_bg_text {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 150px;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .second_bg h2 {
+            color: #ffffff;
+            font-family: "Conv_MyriadPro-Regular";
+            font-weight: 400;
+            margin-bottom: 0px;
+        }
+        .second_bg {
+            height: 166px;
+            width: 100%;
+            background: url(img/second_bg.png) no-repeat;
+            background-size: cover;
+        }
+        .second_bg h2 {
+            color: #ffffff;
+            font-family: "Conv_MyriadPro-Regular";
+            font-weight: 400;
+            margin-bottom: 0px;
+            font-size: 18px;
+        }
+        .gallery_menu {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+        .logo_items span:first-child {
+            background: url(img/logo-barber.png) no-repeat;
+            height: 150px;
+            width: 210px;
+            margin-top: 30px;
+        }
+        .backgraund {
+            margin-top: 80px;
+            height: 333px;
+            background: url(img/backgraund.png) no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+        .text_content_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .text_content_post {
+            width: 265px;
+        }
+        .text_content_post h2 {
+            font-family: "Conv_MyriadPro-Regular";
+            color: #ffffff;
+            text-align: left;
+            margin-bottom: 35px;
+            margin-top: 30px;
+            font-weight: 400;
+        }
+        .text_content_logo p {
+            text-align: left;
+            color: #555555;
+            margin-bottom: 30px;
+            font-size: 14px;
+            font-family: "Conv_MyriadPro-Regular";
+        }
+        .text_content_widget h2 {
+            color: #ffffff;
+            font-family: "Conv_MyriadPro-Regular";
+            font-weight: 400;
+            margin-bottom: 35px;
+            margin-top: 20px;
+        }
+        .text_content_twitter h2 {
+            color: #ffffff;
+            font-family: "Conv_MyriadPro-Regular";
+            font-weight: 400;
+            margin-bottom: 35px;
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width: 460px) {
+        .description_telephon {
+            max-height: 305px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+        .backgraund {
+            margin-top: 80px;
+            height: 300px;
+            background: url(img/backgraund.png) no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+        
+    }
+    @media screen and (max-width: 400px) {
+        .content_box {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .img{
+            width: 285px;
+        }
+        .img_second{
+            width: 285px;
+        }
+        .img_thirth{
+            width: 285px;
+        }
+      
+        .img_forth{
+            width: 285px;
+        }
+        .img_fifth{
+            width: 285px;
+        }
+        .img_sixth {
+            margin-top: 30px;
+            height: 236px;
+            width: 285px;
+            background: url(img/photo-ocean.jpg) no-repeat;
+            position: relative;
+        }
+        .text_box{
+            width: 285px;
+        }
+        .description_telephon {
+            max-height: 292px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+
+      }
+    @media screen and (max-width: 380px) {
+        .backgraund h2 {
+            color: #666666;
+            margin-bottom: 0px;
+            font-weight: 400;
+        }
+       
+        .backgraund p {
+            margin-bottom: 20px;
+        }
+        .description_telephon {
+            max-height: 253px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+        .footer_text {
+            min-height: 75px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .second_footer_text {
+            min-height: 24px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .header_text {
+            width: 320px;
+            position: absolute;
+            top: calc(50% - 42px);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        
+
+        .text_gallery{
+                width: 300px;
+        }
+        .img_gallery{
+            width: 300px;
+        }
+        .img_gallery_second{
+            width: 300px;
+        }
+        .img_gallery_thirth{
+            width: 300px;
+        }
+        .img_gallery_forth{
+            width: 300px;
+        }
+        .slider {
+            height: 400px;
+            position: relative;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .img_gallery {
+            height: 220px;
+            width: 370px;
+            background: url(img/foots.png) no-repeat;
+            background-position: -161px -182px;
+            position: relative;
+        }
+        .img_gallery_forth {
+            height: 220px;
+            width: 370px;
+            background: url(img/hend-phone.png) no-repeat;
+            background-position: -24px -29px;
+            position: relative;
+        }
+        .img_gallery_thirth {
+            height: 220px;
+            width: 370px;
+            background: url(img/ship.png) no-repeat;
+            background-position: -353px -350px;
+            position: relative;
+        }
+        .img_gallery_second {
+            height: 220px;
+            width: 370px;
+            background: url(img/macbook.png) no-repeat;
+            background-position: -65px -16px;
+            position: relative;
+        }
+        .img {
+            height: 236px;
+            width: 285px;
+            background: url(img/hend-phone.png) no-repeat;
+            background-position: -31px -24px;
+            position: relative;
+        }
+        .img_second {
+            height: 236px;
+            width: 285px;
+            background: url(img/quam.jpg) no-repeat;
+            position: relative;
+            background-position: -87px 0px;
+        }
+        .img_fifth {
+            margin-top: 30px;
+            height: 236px;
+            width: 285px;
+            background: url(img/photo-magazine.png) no-repeat;
+            position: relative;
+            background-position: -51px -18px;
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .description_telephon {
+            max-height: 218px;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background: url(img/iphon-and-hend.jpg) no-repeat;
+            margin: 0 auto;
+            background-size: contain;
+        }
+        
+    }
