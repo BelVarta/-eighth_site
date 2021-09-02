@@ -1474,6 +1474,9 @@ div.link a:first-of-type{
             justify-content: center;
             flex-direction: column;
         }
+   .text_container div{
+            margin-right: 0px;
+        }
         .second_bg button {
             font-family: "Conv_MyriadPro-Regular";
             font-size: 14px;
